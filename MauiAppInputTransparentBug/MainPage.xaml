@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiAppInputTransparentBug.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView x:Name="scrollView">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Image
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="dotnet_bot.png" />
+
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="1 Image" />
+            <Rectangle
+                x:Name="rect"
+                BackgroundColor="AliceBlue"
+                HeightRequest="500"
+                WidthRequest="500" />
+            <Image
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="dotnet_bot.png" />
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="2 Image" />
+            <Image
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="dotnet_bot.png" />
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="3 Image" />
+            <Button
+                x:Name="CounterBtn"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Click me" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
